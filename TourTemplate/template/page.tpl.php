@@ -78,23 +78,19 @@
                     </div>
                     <div class="col-12 col-md-3 spacing">
                         <p class="topic m-0 text-light">Outward route</p>
-                        <label class="select">
-                            <select class="inputrou">
+                            <select class="inputrou down-arrow">
                                 <option selected>Copenhagen to Oslo</option>
                                 <option>Copenhagen to Oslo</option>
                                 <option>Copenhagen to Oslo</option>
                             </select>
-                        </label>
                     </div>
                     <div class="col-12 col-md-3 spacing">
                         <p class="topic m-0 text-light">Return route</p>
-                        <label class="select">
-                            <select class="inputrou">
+                            <select class="inputrou down-arrow">
                                 <option selected>Oslo to Copenhagen</option>
                                 <option>Oslo to Copenhagen</option>
                                 <option>Oslo to Copenhagen</option>
                             </select>
-                        </label>
                     </div>
                     <div class="col-12 col-md-3 p-md-0 spacing">
                         <p class="topic m-0 text-light">Departure/Return date</p>
@@ -141,12 +137,10 @@
                     </div>
                     <div class="col-6 col-md-3 spacing">
                         <p class="topic m-0 text-light">Vehicles</p>
-                        <label class="select">
-                            <select class="inputrou">
-                                <option selected>car<6.0mHXmL>
+                            <select class="inputrou down-arrow">
+                                <option selected>car<6.0m H x 5.0m L>
                                 </option>
                             </select>
-                        </label>
                     </div>
                     <div class="col-6 col-md-3 spacing">
                         <p class="topic m-0 text-light">Club one card</p>
@@ -204,7 +198,7 @@
                                 </div>
 
                                 <div class="col-3">
-									<?php $img = path_to_theme() . '/images/berlin.jpg';?>
+									<?php $img = path_to_theme() . '/images/berlin.png';?>
                                     <img src="<?php print $img ?>" class="brightness img-fluid d-block"
                                         alt="berlin">
                                     <button class="btn btn-white mx-2 my-2">MINI CRUIZ</button>
@@ -263,7 +257,7 @@
                                 </div>
 
                                 <div class="col-3">
-								<?php $img = path_to_theme() . '/images/berlin.jpg';?>
+								<?php $img = path_to_theme() . '/images/berlin.png';?>
                                     <img src="<?php print $img ?>" class="brightness img-fluid d-block"
                                         alt="berlin">
                                     <button class="btn btn-white mx-2 my-2">MINI CRUIZ</button>
@@ -322,7 +316,7 @@
                                 </div>
 
                                 <div class="col-3">
-								<?php $img = path_to_theme() . '/images/berlin.jpg';?>
+								<?php $img = path_to_theme() . '/images/berlin.png';?>
                                     <img src="<?php print $img ?>" class="brightness img-fluid d-block"
                                         alt="berlin">
                                     <button class="btn btn-white mx-2 my-2">MINI CRUIZ</button>
@@ -487,7 +481,7 @@
                         <div class="table-responsive">
                             <table class="table table-hover text-light">
                                 <thead>
-                                <?php $img = path_to_theme() . '/images/city.jpg';?>
+                                <?php $img = path_to_theme() . '/images/image3.jpg';?>
                                     <tr class="img-val img-blend"
                                         style="background:url('<?php print $img ?>') repeat;">
                                         <th>ANGOLA</th>

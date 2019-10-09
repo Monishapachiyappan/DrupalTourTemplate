@@ -10,6 +10,7 @@
   scripts[] = js/jquery-3.4.1.min.js
   scripts[] = js/bootstrap.min.js
   scripts[] = js/popper.min.js
+  scripts[] = js/custom.js
 
   regions[header] = Header
   regions[highlighted] = Highlighted
