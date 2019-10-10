@@ -10,6 +10,12 @@
 	border: 1px solid #ebedf4;
 	border-radius: 25px;
 	padding: 5px 10px;
+	width: 140% !important;
+	-webkit-appearance: none;
+	color: #b3b9c7;
+}
+.select-arrow{
+	background: url(../images/down.png) 80% / 15% no-repeat;
 }
 
 
@@ -35,12 +41,21 @@ li.nav-item {
 	width: -webkit-fill-available;
 }
 
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: none;
+}
+
 .inputrou {
-	border: transparent;
+	border: none;
 	border-bottom: 1px solid #ebedf4;
 	background-color: transparent;
 	-webkit-appearance: none;
 	padding: 0px 0px 5px 0px;
+}
+
+.down-arrow-lessen {
+	width: 40px;
+	background: url("../images/down.png") 100% / 20% no-repeat;
 }
 
 .down-arrow {
@@ -48,20 +63,19 @@ li.nav-item {
 	background: url("../images/down.png") 100% / 4% no-repeat;
 }
 
-.select:after {
-	content: '\f078';
-	font-family: "FontAwesome";
-	color: #e0dcdc;
-	padding-left: 5px;
-	font-size: 7px;
+.datepicker {
+	width: 200px;
+	cursor: default;
+	background: url("../images/calendar.png") 100% / 7% no-repeat;
 }
 
-.datepicker:after {
-	content: '\f133';
-	font-family: "FontAwesome";
-	color: #e0dcdc;
-	padding-left: 5px;
-	font-size: 10px;
+select:focus,
+input:focus {
+    outline:none;
+}
+
+.text-line{
+	width: 170px;	
 }
 
 .topic {
@@ -69,18 +83,9 @@ li.nav-item {
 	font-weight: 100;
 }
 
-.text-muted {
-	color: #e6e8ec !important;
-}
-
 .btn-primary {
 	background-color: #4e5aff;
 }
-
-input[type=radio]:checked {
-	color: #4e5aff;
-}
-
 
 /* Slider Block */
 
@@ -105,6 +110,7 @@ input[type=radio]:checked {
 
 .carousel-item img {
 	height: 400px;
+	width: -webkit-fill-available;
 }
 
 .brightness {
@@ -291,8 +297,12 @@ td:nth-child(2) {
 	.container.travel-details {
 		padding: 0px;
 	}
+	/* Travel Info Block */
 	.spacing {
 		margin-bottom: 15px;
+	}
+	.datepicker {
+		width: 170px;
 	}
 	/* Slider Block */
 	.image-slider li {
@@ -310,7 +320,7 @@ td:nth-child(2) {
 	}
 	/* footer img */
 	.partners img {
-		width: 30px;
+		width: 35px;
 	}
 }
 
@@ -319,6 +329,14 @@ td:nth-child(2) {
 	.container.travel-details {
 		padding: 0px;
 	}
+	/* Travel Info Block */
+	.down-arrow,
+	.text-line {
+		width: 140px;
+	}	
+	.datepicker {
+		width: 170px;
+	}
 	/* Slider Block */
 	.carousel-item img {
 		height: 250px;
@@ -326,8 +344,9 @@ td:nth-child(2) {
 	.grad_backgrnd {
 		margin-top: 20px;
 	}
+	/* Footer img */
 	.partners img {
-		width: 50px;
+		width: 60px;
 	}
 }
 
@@ -337,17 +356,15 @@ td:nth-child(2) {
 		position: relative;
 	}
 	#overlayfirst {
-		top: -81px;
+		top: -74px;
 		position: relative;
 	}
 	#overlaylast {
-		top: -80px;
+		top: -75px;
 		position: relative;
 	}
+	/* Travel Info Block */
 	.grad_backgrnd {
 		margin-top: -40px;
-	}
-	.partners img {
-		height: fit-content;
 	}
 }

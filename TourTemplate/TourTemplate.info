@@ -3,13 +3,16 @@
   version = VERSION
   core = 7.x
   stylesheets[all][] = css/bootstrap.min.css
+  stylesheets[all][] = css/font-awesome.min.css
+  stylesheets[all][] = css/daterangepicker.css
   stylesheets[all][] = css/style.css
   stylesheets[all][] = css/global.css
-  stylesheets[all][] = css/font-awesome.min.css
   
   scripts[] = js/jquery-3.4.1.min.js
   scripts[] = js/bootstrap.min.js
   scripts[] = js/popper.min.js
+  scripts[] = js/moment.min.js
+  scripts[] = js/daterangepicker.min.js
   scripts[] = js/custom.js
 
   regions[header] = Header

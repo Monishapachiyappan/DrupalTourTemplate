@@ -9,7 +9,11 @@
                     <ul class="list-unstyled">
                         <li>Contact us</li>
                         <li>About us</li>
-                        <li><span class="lang_select">EN <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                        <li><select class="lang_select select-arrow">
+                                <option selected>EN</option>
+                                <option>UK</option>
+                                <option>AK</option>
+                            </select>
                         </li>
                     </ul>
                 </div>
@@ -65,88 +69,73 @@
                 <div class="row m-auto py-3 bg-light" id="overlayfirst">
                     <div class="col-12 col-md-3 pl-md-3 spacing">
                         <p class="topic m-0 text-light">Choose way</p>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Outward</label>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" name="radio" class="custom-control-input" id="customRadio1">
+                            <label class="custom-control-label" for="customRadio1">Outward</label>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2" checked>
-                            <label class="form-check-label" for="inlineRadio2">Round trip</label>
+
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" name="radio" id="customRadio2" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="customRadio2">Round trip</label>
                         </div>
                     </div>
                     <div class="col-12 col-md-3 spacing">
                         <p class="topic m-0 text-light">Outward route</p>
-                            <select class="inputrou down-arrow">
-                                <option selected>Copenhagen to Oslo</option>
-                                <option>Copenhagen to Oslo</option>
-                                <option>Copenhagen to Oslo</option>
-                            </select>
+                        <select class="inputrou down-arrow">
+                            <option selected>Copenhagen to Oslo</option>
+                            <option>norway to Basin</option>
+                            <option>Berlin to Caset</option>
+                        </select>
                     </div>
                     <div class="col-12 col-md-3 spacing">
-                        <p class="topic m-0 text-light">Return route</p>
-                            <select class="inputrou down-arrow">
-                                <option selected>Oslo to Copenhagen</option>
-                                <option>Oslo to Copenhagen</option>
-                                <option>Oslo to Copenhagen</option>
-                            </select>
+                    <p class="topic m-0 text-light">Return route</p>
+                        <select class="inputrou down-arrow">
+                            <option selected>Oslo to Copenhagen</option>
+                            <option>Copenhagen to Oslo</option>
+                            <option>Caset to Berlin</option>
+                        </select>
                     </div>
                     <div class="col-12 col-md-3 p-md-0 spacing">
                         <p class="topic m-0 text-light">Departure/Return date</p>
-                        <label class="datepicker">
-                            <select class="inputrou">
-                                <option>17/11/2017-04/12/2017</option>
-                                <option>21/01/2018-31/12/2019</option>
-                                <option selected>11/08/1996-13/081996</option>
-                            </select>
-                        </label>
-
+                        <input type="text" class="inputrou datepicker" name="daterange" value="10/25/2019 - 11/13/2019">
                     </div>
                 </div>
                 <div class="row m-auto py-3 shadow" id="overlaylast">
                     <div class="col-4 col-md-1 spacing">
                         <p class="topic m-0 text-light">Adults</p>
-                        <label class="select">
-                            <select class="inputrou">
+                            <select class="inputrou down-arrow-lessen">
                                 <option selected>4</option>
                                 <option>5</option>
                                 <option>3</option>
                             </select>
-                        </label>
                     </div>
                     <div class="col-4 col-md-1 spacing">
                         <p class="topic m-0 text-light">Children</p>
-                        <label class="select">
-                            <select class="inputrou">
+                            <select class="inputrou down-arrow-lessen">
                                 <option selected>2</option>
                                 <option>1</option>
                                 <option>4</option>
                             </select>
-                        </label>
                     </div>
                     <div class="col-4 col-md-1 spacing">
                         <p class="topic m-0 text-light">Pet</p>
-                        <label class="select">
-                            <select class="inputrou">
+                            <select class="inputrou down-arrow-lessen">
                                 <option selected>1</option>
                                 <option>2</option>
                                 <option>3</option>
                             </select>
-                        </label>
                     </div>
                     <div class="col-6 col-md-3 spacing">
                         <p class="topic m-0 text-light">Vehicles</p>
-                            <select class="inputrou down-arrow">
-                                <option selected>car<6.0m H x 5.0m L>
-                                </option>
-                            </select>
-                    </div>
-                    <div class="col-6 col-md-3 spacing">
-                        <p class="topic m-0 text-light">Club one card</p>
-                        <select class="inputrou text-muted">
-                            <option>Enter car numbers</option>
+                        <select class="inputrou down-arrow">
+                            <option selected>Car&#60;6.0m H x 5.0m L&#62; </option>
+                            <option>Bike&#60;3.0m H x 4.0m L&#62; </option>
+                            <option>Cab&#60;7.0m H x 6.0m L&#62; </option>
                         </select>
+                    </div>
+                    <div class="col-12 col-md-3 spacing">
+                        <p class="topic m-0 text-light">Club one card</p>
+                        <input type="text" class="inputrou text-line" name="carno" placeholder="Enter car numbers">
                     </div>
                     <div class="col-12 col-md-3 p-md-0 spacing d-flex justify-content-center justify-content-md-start">
                         <button class="btn btn-primary rounded-pill px-5">SEARCH NOW</button>
@@ -626,6 +615,7 @@
             </div>
         </div>
 
+        <!-- Footer -->
         <div class="main_footer wave">
             <div class="container footer">
                 <div class="row">
